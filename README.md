@@ -85,10 +85,26 @@ Stability confirmed via root-locus and Bode plots; performance held under both n
 
 ![Equation of Piston Motion](docs/simulink_piston.png)
 
+## Results
+
+**Step response — piston motion**
+
+![Step response](docs/step_response.png)
+
+**Step + sine wave — cylinder motion**
+
+![Step and sine wave cylinder](docs/step_sine_cylinder.png)
+
+**Sine tracking — piston motion**
+
+![Sine tracking piston](docs/sine_tracking_piston.png)
+
+**Bode plot**
+
+![Bode plot](docs/bode_plot.png)
+
 ## Still to add
 
-- [ ] Step-response plot (position vs. time, no-load vs. 50 kN)
-- [ ] Root-locus / Bode plots
 - [ ] ControlDesk screenshot
 
 ---
