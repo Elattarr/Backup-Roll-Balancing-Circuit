@@ -103,9 +103,9 @@ Stability confirmed via root-locus and Bode plots; performance held under both n
 
 ![Bode plot](docs/bode_plot.png)
 
-## Still to add
+## ControlDesk layout
 
-- [ ] ControlDesk screenshot
+![ControlDesk layout](docs/controldesk_layout.png)
 
 ---
 
