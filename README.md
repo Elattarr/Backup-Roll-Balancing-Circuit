@@ -51,15 +51,18 @@ Stability confirmed via root-locus and Bode plots; performance held under both n
 
 ## Repository contents
 
-- `/simulink` — nonlinear valve + plant model, controller
-- `/docs` — derivation of cylinder forces & flow, gain-range analysis, results
+| File | Description |
+|------|-------------|
+| [docs/Circuit.pdf](docs/Circuit.pdf) | Hydraulic circuit diagram |
+| [docs/Project_circuit.ct](docs/Project_circuit.ct) | ControlDesk experiment layout |
+| [docs/Backup_Roll_Balancing_Presentation.pptx](docs/Backup_Roll_Balancing_Presentation.pptx) | Project presentation |
 
-## Results & figures
+## Missing / to add
 
-<!-- These plots are what make the repo credible — add them -->
-- [ ] Add step-response plot (position vs. time, no-load vs. 50 kN)
-- [ ] Add root-locus / Bode plots used for gain selection
-- [ ] Add a ControlDesk layout screenshot
+- [ ] Simulink model files (nonlinear valve + plant, PID controller)
+- [ ] Step-response plot (position vs. time, no-load vs. 50 kN)
+- [ ] Root-locus / Bode plots used for gain selection
+- [ ] ControlDesk screenshot
 
 ---
 
