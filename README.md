@@ -53,6 +53,7 @@ Stability confirmed via root-locus and Bode plots; performance held under both n
 
 | File | Description |
 |------|-------------|
+| [simulink/CVCmodel.slx](simulink/CVCmodel.slx) | Full Simulink model (open in MATLAB) |
 | [simulink/parameters.m](simulink/parameters.m) | All model parameters (PID gains, valve, cylinder, fluid) |
 | [docs/Circuit.pdf](docs/Circuit.pdf) | Hydraulic circuit diagram |
 | [docs/Project_circuit.ct](docs/Project_circuit.ct) | ControlDesk experiment layout |
@@ -84,12 +85,11 @@ Stability confirmed via root-locus and Bode plots; performance held under both n
 
 ![Equation of Piston Motion](docs/simulink_piston.png)
 
-## Missing / to add
+## Still to add
 
-- [ ] Export Simulink model as `.slx` → save to `simulink/`
-- [ ] Step-response plot (position vs. time, no-load vs. 50 kN) → save to `docs/`
-- [ ] Root-locus / Bode plots → save to `docs/`
-- [ ] ControlDesk screenshot → save to `docs/`
+- [ ] Step-response plot (position vs. time, no-load vs. 50 kN)
+- [ ] Root-locus / Bode plots
+- [ ] ControlDesk screenshot
 
 ---
 
