@@ -53,16 +53,27 @@ Stability confirmed via root-locus and Bode plots; performance held under both n
 
 | File | Description |
 |------|-------------|
+| [simulink/parameters.m](simulink/parameters.m) | All model parameters (PID gains, valve, cylinder, fluid) |
 | [docs/Circuit.pdf](docs/Circuit.pdf) | Hydraulic circuit diagram |
 | [docs/Project_circuit.ct](docs/Project_circuit.ct) | ControlDesk experiment layout |
 | [docs/Backup_Roll_Balancing_Presentation.pptx](docs/Backup_Roll_Balancing_Presentation.pptx) | Project presentation |
 
+### Simulink model structure
+
+| Subsystem | Description |
+|-----------|-------------|
+| PID Control | Parallel Kp / Ki·(1/s) / Kd·(Δu/Δt) |
+| Valve Dynamics | 2nd-order: `y'' + 2·Dv·ω·y' + ω²·y = Kv·ω²·I` |
+| Linearised Flow Rate | `QL = (Qo/ymax)·y` |
+| Pressure Dynamics | Continuity eq. for Chamber A & B → `PL = PA − PB` |
+| Equation of Piston Motion | `m·x'' = Arod·PL − d·xd − F` |
+
 ## Missing / to add
 
-- [ ] Simulink model files (nonlinear valve + plant, PID controller)
-- [ ] Step-response plot (position vs. time, no-load vs. 50 kN)
-- [ ] Root-locus / Bode plots used for gain selection
-- [ ] ControlDesk screenshot
+- [ ] Export Simulink model as `.slx` → save to `simulink/`
+- [ ] Step-response plot (position vs. time, no-load vs. 50 kN) → save to `docs/`
+- [ ] Root-locus / Bode plots → save to `docs/`
+- [ ] ControlDesk screenshot → save to `docs/`
 
 ---
 
