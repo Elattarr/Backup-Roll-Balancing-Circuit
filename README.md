@@ -58,15 +58,31 @@ Stability confirmed via root-locus and Bode plots; performance held under both n
 | [docs/Project_circuit.ct](docs/Project_circuit.ct) | ControlDesk experiment layout |
 | [docs/Backup_Roll_Balancing_Presentation.pptx](docs/Backup_Roll_Balancing_Presentation.pptx) | Project presentation |
 
-### Simulink model structure
+### Simulink model diagrams
 
-| Subsystem | Description |
-|-----------|-------------|
-| PID Control | Parallel Kp / Ki·(1/s) / Kd·(Δu/Δt) |
-| Valve Dynamics | 2nd-order: `y'' + 2·Dv·ω·y' + ω²·y = Kv·ω²·I` |
-| Linearised Flow Rate | `QL = (Qo/ymax)·y` |
-| Pressure Dynamics | Continuity eq. for Chamber A & B → `PL = PA − PB` |
-| Equation of Piston Motion | `m·x'' = Arod·PL − d·xd − F` |
+**Full closed-loop system**
+
+![Full closed-loop system](docs/simulink_overview.png)
+
+**PID Controller**
+
+![PID Controller](docs/simulink_pid.png)
+
+**Valve Dynamics** — `y'' + 2·Dv·ω·y' + ω²·y = Kv·ω²·I`
+
+![Valve Dynamics](docs/simulink_valve.png)
+
+**Linearised Flow Rate** — `QL = (Qo/ymax)·y`
+
+![Linearised Flow Rate](docs/simulink_flow.png)
+
+**Pressure Dynamics** — Continuity eq. for Chamber A & B
+
+![Pressure Dynamics](docs/simulink_pressure.png)
+
+**Equation of Piston Motion** — `m·x'' = Arod·PL − d·xd − F`
+
+![Equation of Piston Motion](docs/simulink_piston.png)
 
 ## Missing / to add
 
